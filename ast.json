@@ -1,0 +1,264 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 215,
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "start": 0,
+      "end": 16,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 6,
+          "end": 15,
+          "id": {
+            "type": "Identifier",
+            "start": 6,
+            "end": 8,
+            "name": "pi"
+          },
+          "init": {
+            "type": "Literal",
+            "start": 11,
+            "end": 15,
+            "value": 3.14,
+            "raw": "3.14"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "FunctionDeclaration",
+      "start": 18,
+      "end": 140,
+      "id": {
+        "type": "Identifier",
+        "start": 27,
+        "end": 30,
+        "name": "sum"
+      },
+      "expression": false,
+      "generator": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "start": 31,
+          "end": 42,
+          "name": "number_list"
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "start": 44,
+        "end": 140,
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "start": 50,
+            "end": 64,
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "start": 54,
+                "end": 63,
+                "id": {
+                  "type": "Identifier",
+                  "start": 54,
+                  "end": 59,
+                  "name": "total"
+                },
+                "init": {
+                  "type": "Literal",
+                  "start": 62,
+                  "end": 63,
+                  "value": 0,
+                  "raw": "0"
+                }
+              }
+            ],
+            "kind": "let"
+          },
+          {
+            "type": "ForInStatement",
+            "start": 69,
+            "end": 121,
+            "left": {
+              "type": "VariableDeclaration",
+              "start": 74,
+              "end": 79,
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "start": 78,
+                  "end": 79,
+                  "id": {
+                    "type": "Identifier",
+                    "start": 78,
+                    "end": 79,
+                    "name": "a"
+                  },
+                  "init": null
+                }
+              ],
+              "kind": "let"
+            },
+            "right": {
+              "type": "Identifier",
+              "start": 83,
+              "end": 94,
+              "name": "number_list"
+            },
+            "body": {
+              "type": "BlockStatement",
+              "start": 96,
+              "end": 121,
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "start": 104,
+                  "end": 115,
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 104,
+                    "end": 114,
+                    "operator": "+=",
+                    "left": {
+                      "type": "Identifier",
+                      "start": 104,
+                      "end": 109,
+                      "name": "total"
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "start": 113,
+                      "end": 114,
+                      "name": "a"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "ReturnStatement",
+            "start": 126,
+            "end": 138,
+            "argument": {
+              "type": "Identifier",
+              "start": 133,
+              "end": 138,
+              "name": "total"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 142,
+      "end": 215,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 148,
+          "end": 215,
+          "id": {
+            "type": "Identifier",
+            "start": 148,
+            "end": 153,
+            "name": "multi"
+          },
+          "init": {
+            "type": "FunctionExpression",
+            "start": 156,
+            "end": 215,
+            "id": null,
+            "expression": false,
+            "generator": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "start": 165,
+                "end": 166,
+                "name": "a"
+              },
+              {
+                "type": "Identifier",
+                "start": 168,
+                "end": 169,
+                "name": "b"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "start": 170,
+              "end": 215,
+              "body": [
+                {
+                  "type": "BlockStatement",
+                  "start": 175,
+                  "end": 198,
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "start": 182,
+                      "end": 192,
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "start": 186,
+                          "end": 191,
+                          "id": {
+                            "type": "Identifier",
+                            "start": 186,
+                            "end": 187,
+                            "name": "c"
+                          },
+                          "init": {
+                            "type": "Literal",
+                            "start": 190,
+                            "end": 191,
+                            "value": 4,
+                            "raw": "4"
+                          }
+                        }
+                      ],
+                      "kind": "let"
+                    }
+                  ]
+                },
+                {
+                  "type": "ReturnStatement",
+                  "start": 200,
+                  "end": 213,
+                  "argument": {
+                    "type": "BinaryExpression",
+                    "start": 207,
+                    "end": 212,
+                    "left": {
+                      "type": "Identifier",
+                      "start": 207,
+                      "end": 208,
+                      "name": "a"
+                    },
+                    "operator": "*",
+                    "right": {
+                      "type": "Identifier",
+                      "start": 211,
+                      "end": 212,
+                      "name": "b"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "module"
+}
